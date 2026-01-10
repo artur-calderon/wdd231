@@ -1,0 +1,39 @@
+@media (min-width: 768px) {
+
+    #menuButton {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    nav a {
+        border-bottom: none;
+        border-right: 1px solid #444;
+    }
+
+    nav a:last-child {
+        border-right: none;
+    }
+
+    main {
+        max-width: 1100px;
+        margin: auto;
+    }
+
+    .site-header {
+        max-width: 1100px;
+        margin: auto;
+    }
+
+    .about-container {
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .course-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

@@ -1,5 +1,3 @@
-import { courses } from "./courses.js";
-
 const menuButton = document.getElementById("menuButton");
 const navigation = document.querySelector("nav");
 

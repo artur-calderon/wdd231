@@ -1,4 +1,4 @@
-export const courses = [
+const courses = [
 	{
 		subject: "CSE",
 		number: 110,
