@@ -1,0 +1,190 @@
+:root {
+    --primary: #1E3A8A;
+    --secondary: #3B82F6;
+    --accent: #F59E0B;
+    --bg: #F8FAFC;
+    --surface: #FFFFFF;
+    --text-main: #0F172A;
+    --text-muted: #475569;
+    --border: #E2E8F0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg);
+    color: var(--text-main);
+}
+
+/* ================= HEADER ================= */
+header {
+    background-color: var(--surface);
+    border-bottom: 1px solid var(--border);
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.header-content h1 {
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+header img {
+    height: 40px;
+}
+
+#menuBtn {
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+nav {
+    display: none;
+    flex-direction: column;
+    background-color: var(--surface);
+}
+
+nav a {
+    padding: 0.75rem 1rem;
+    text-decoration: none;
+    color: var(--text-main);
+    border-top: 1px solid var(--border);
+}
+
+nav a:hover {
+    background-color: var(--bg);
+}
+
+/* ================= HERO ================= */
+.hero {
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.cta {
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+    background-color: var(--accent);
+    color: #000;
+    padding: 0.6rem 1.2rem;
+    border-radius: 999px;
+    font-weight: 600;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* ================= MAIN ================= */
+main {
+    max-width: 1200px;
+    margin: auto;
+}
+
+h2 {
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+
+/* ================= VIEW TOGGLE ================= */
+.view-toggle {
+    display: flex;
+    gap: 1rem;
+    padding: 0 1rem 1rem;
+}
+
+.view-toggle button {
+    flex: 1;
+    padding: 0.6rem;
+    border-radius: 6px;
+    border: 1px solid var(--border);
+    background-color: var(--surface);
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.view-toggle button:hover {
+    background-color: var(--secondary);
+    color: #fff;
+}
+
+/* ================= MEMBERS ================= */
+#members.grid {
+    display: grid;
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+#members.list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.member-card {
+    background-color: var(--surface);
+    border-radius: 12px;
+    padding: 1rem;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    border: 1px solid var(--border);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.member-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+}
+
+.member-card img {
+    width: 100%;
+    max-width: 140px;
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+}
+
+.member-card h3 {
+    margin: 0.5rem 0;
+}
+
+.member-card p {
+    margin: 0.2rem 0;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}
+
+/* ================= FOOTER ================= */
+footer {
+    background-color: var(--primary);
+    color: #fff;
+    margin-top: 2rem;
+    padding: 2rem 1rem;
+}
+
+footer p {
+    margin: 0.3rem 0;
+}
+
+.social {
+    margin: 1rem 0;
+}
+
+.social img {
+    width: 32px;
+    margin-right: 0.5rem;
+}

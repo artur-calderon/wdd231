@@ -1,0 +1,51 @@
+[
+  {
+    "name": "Vitamais Nutrição Animal",
+    "address": "Av. Transcontinental, Ji-Paraná, RO",
+    "phone": "69 3422-0001",
+    "image": "vitamais.webp",
+    "association_level": "3"
+  },
+  {
+    "name": "TRR BrasDiesel",
+    "address": "Av. 7 de Setembro, Ji-Paraná, RO",
+    "phone": "69 3422-0102",
+    "image": "brasdiesel.webp",
+    "association_level": "3"
+  },
+  {
+    "name": "Rodotec Transportadora Logística",
+    "address": "Av. Transcontinental, Jardim São Cristóvão, Ji-Paraná, RO",
+    "phone": "69 3422-0102",
+    "image": "rodotec.png",
+    "association_level": "2"
+  },
+  {
+    "name": "Mercantil Nova Era",
+    "address": "Av. Marechal Rondon, Ji-Paraná, RO",
+    "phone": "69 3422-0202",
+    "image": "mercantil_nova_era.jpg",
+    "association_level": "3"
+  },
+  {
+    "name": "Central Transportes Ltda.",
+    "address": "Av. Transcontinental, Ji-Paraná, RO",
+    "phone": "69 3422-0303",
+    "image": "central_transportes.jpg",
+    "association_level": "2"
+  },
+  {
+    "name": "Supermercado Irmãos Gonçalves",
+    "address": "Av. Marechal Rondon, R. dos Mineiros, 1793 C - Bairro Centro, Ji-Paraná - RO, 76900-137",
+    "phone": "(69) 3411-4900",
+    "image": "supermercado_irmaos_goncalves.jpg",
+    "association_level": "1"
+  },
+  {
+    "name": "Boasafra",
+    "address": "Av. Transcontinental, 309 - Bairro Centro, Ji-Paraná - RO, 76900-041",
+    "phone": "(69) 3422-2323",
+    "image": "boasafra.jpg",
+    "association_level": "1"
+  }
+]

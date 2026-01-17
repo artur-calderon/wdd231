@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="description"
+			content="Diretório de membros da Câmara de Comércio" />
+		<meta name="author" content="Artur Calderon" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Ji-Paraná Chamber of Commerce | Directory</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+			rel="stylesheet" />
+
+		<meta property="og:title" content="Ji-Paraná Chamber of Commerce" />
+		<meta
+			property="og:description"
+			content="Conheça os membros da Câmara de Comércio de Ji-Paraná" />
+		<meta property="og:image" content="images/logo.png" />
+		<meta
+			property="og:url"
+			content="https://seusite.github.io/chamber/directory.html" />
+
+		<link rel="icon" href="images/favicon.ico" />
+
+		<link rel="stylesheet" href="styles/normalize.css" />
+		<link rel="stylesheet" href="styles/small.css" />
+		<link rel="stylesheet" href="styles/larger.css" />
+	</head>
+	<body>
+		<header>
+			<div class="header-content">
+				<img src="images/logo.png" alt="Chamber Logo" />
+				<h1>Ji-Paraná Chamber of Commerce</h1>
+
+				<button id="menuBtn">☰</button>
+			</div>
+
+			<nav id="navMenu">
+				<a href="#">Home</a>
+				<a href="#">Directory</a>
+				<a href="#">Join</a>
+				<a href="#">Discover</a>
+			</nav>
+		</header>
+
+		<main>
+			<!-- HERO -->
+			<section class="hero">
+				<img src="images/hero-image.jpg" alt="Hero image" />
+				<a class="cta" href="#">Keynote Tickets</a>
+			</section>
+
+			<h2>Directory</h2>
+
+			<!-- VIEW TOGGLE -->
+			<div class="view-toggle">
+				<button id="gridView">Grid</button>
+				<button id="listView">List</button>
+			</div>
+
+			<!-- MEMBERS -->
+			<section id="members" class="grid"></section>
+		</main>
+
+		<footer>
+			<div class="footer-info">
+				<p><strong>Ji-Paraná Chamber of Commerce</strong></p>
+				<p>10 Rue De La Paix</p>
+				<p>Ji-Paraná, Mali 999</p>
+				<p>info@Ji-Paranácoc.org</p>
+				<p>(223) 555-2300</p>
+			</div>
+
+			<div class="social">
+				<img src="images/youtube.png" alt="YouTube" />
+				<img src="images/x-icon.svg" alt="Twitter" />
+				<img src="images/linkedin.svg" alt="LinkedIn" />
+			</div>
+
+			<div class="dev-info">
+				<p>WDD 231 Class Project</p>
+				<p>Artur Calderon</p>
+				<p>© <span id="year"></span> Ji-Paraná Chamber</p>
+				<p>Last Modification: <span id="lastModified"></span></p>
+			</div>
+		</footer>
+
+		<script src="scripts/directory.js"></script>
+	</body>
+</html>

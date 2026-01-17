@@ -1,0 +1,38 @@
+@media (min-width: 768px) {
+
+    .header-content h1 {
+        font-size: 1.4rem;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        padding: 0 1rem 1rem;
+    }
+
+    nav a {
+        border: none;
+    }
+
+    #menuBtn {
+        display: none;
+    }
+
+    #members.grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .member-card {
+        display: grid;
+        grid-template-columns: 150px 1fr;
+        gap: 1rem;
+        align-items: center;
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+}
