@@ -181,6 +181,7 @@ footer p {
 }
 
 .social {
+    display: flex;
     margin: 1rem 0;
 }
 
