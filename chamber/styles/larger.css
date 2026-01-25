@@ -30,6 +30,14 @@
         align-items: center;
     }
 
+    .forecast-display {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .spotlights-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
     footer {
         display: grid;
         grid-template-columns: repeat(3, 1fr);

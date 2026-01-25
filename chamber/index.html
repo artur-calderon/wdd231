@@ -1,14 +1,14 @@
 <!doctype html>
-<html lang="pt-BR">
+<html lang="en">
 	<head>
 		<meta charset="UTF-8" />
 		<meta
 			name="description"
-			content="Explore the Ji-Paraná Chamber of Commerce member directory and discover local businesses, services, and organizations that support our growing community." />
+			content="Welcome to the Ji-Paraná Chamber of Commerce. Discover local events, weather updates, and featured member businesses." />
 
 		<meta name="author" content="Artur Calderon" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Ji-Paraná Chamber of Commerce | Directory</title>
+		<title>Ji-Paraná Chamber of Commerce | Home</title>
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
@@ -18,11 +18,11 @@
 		<meta property="og:title" content="Ji-Paraná Chamber of Commerce" />
 		<meta
 			property="og:description"
-			content="Explore the Ji-Paraná Chamber of Commerce member directory and discover local businesses, services, and organizations supporting our community." />
+			content="Welcome to the Ji-Paraná Chamber of Commerce" />
 		<meta property="og:image" content="images/hero-image.jpg" />
 		<meta
 			property="og:url"
-			content="https://artur-calderon.github.io/chamber/images/hero-image.jpg" />
+			content="https://artur-calderon.github.io/chamber/" />
 
 		<link rel="icon" href="images/favicon.ico" />
 
@@ -48,22 +48,32 @@
 		</header>
 
 		<main>
-			<!-- HERO -->
 			<section class="hero">
-				<img src="images/hero-image.jpg" alt="Hero image" />
-				<a class="cta" href="#">Keynote Tickets</a>
+				<img
+					src="images/hero-image.jpg"
+					alt="scalable, responsive hero image" />
+				<a class="cta" href="#">Join Us</a>
 			</section>
 
-			<h2>Directory</h2>
+			<section class="events-section">
+				<h2>Events</h2>
+				<div id="events" class="events-container"></div>
+			</section>
 
-			<!-- VIEW TOGGLE -->
-			<div class="view-toggle">
-				<button id="gridView">Grid</button>
-				<button id="listView">List</button>
-			</div>
+			<section class="weather-section">
+				<h3>Current Weather</h3>
+				<div id="current-weather" class="weather-display">
+					<p>Loading weather...</p>
+				</div>
 
-			<!-- MEMBERS -->
-			<section id="members" class="grid"></section>
+				<h3>Weather Forecast</h3>
+				<div id="forecast-weather" class="forecast-display"></div>
+			</section>
+
+			<section class="spotlights-section">
+				<h2>Featured Members</h2>
+				<div id="spotlights" class="spotlights-container"></div>
+			</section>
 		</main>
 
 		<footer>
@@ -89,6 +99,7 @@
 			</div>
 		</footer>
 
-		<script src="scripts/directory.js"></script>
+		<script src="scripts/script.js"></script>
+		<script src="scripts/index.js"></script>
 	</body>
 </html>
