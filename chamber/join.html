@@ -1,0 +1,367 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="description"
+			content="Join the Ji-Paraná Chamber of Commerce. Become a member and gain access to networking opportunities, events, and business growth benefits." />
+
+		<meta name="author" content="Artur Calderon" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Ji-Paraná Chamber of Commerce | Join</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+			rel="stylesheet" />
+
+		<meta property="og:title" content="Ji-Paraná Chamber of Commerce" />
+		<meta
+			property="og:description"
+			content="Join the Ji-Paraná Chamber of Commerce and unlock exclusive networking and business growth opportunities." />
+		<meta property="og:image" content="images/hero-image.jpg" />
+		<meta
+			property="og:url"
+			content="https://artur-calderon.github.io/chamber/images/hero-image.jpg" />
+
+		<link rel="icon" href="images/favicon.ico" />
+
+		<link rel="stylesheet" href="styles/normalize.css" />
+		<link rel="stylesheet" href="styles/small.css" />
+		<link rel="stylesheet" href="styles/larger.css" />
+		<link rel="stylesheet" href="styles/join.css" />
+	</head>
+	<body>
+		<header>
+			<div class="header-content">
+				<img src="images/logo.png" alt="Chamber Logo" />
+				<h1>Ji-Paraná Chamber of Commerce</h1>
+
+				<button id="menuBtn">☰</button>
+			</div>
+
+			<nav id="navMenu">
+				<a href="index.html">Home</a>
+				<a href="directory.html">Directory</a>
+				<a href="join.html">Join</a>
+				<a href="#">Discover</a>
+			</nav>
+		</header>
+
+		<main>
+			<section class="hero">
+				<img src="images/hero-image.jpg" alt="Hero image" />
+				<a class="cta" href="#form">Join Now</a>
+			</section>
+
+			<h2>Join Our Chamber</h2>
+
+			<div class="join-container">
+				<section class="form-section">
+					<form
+						id="membershipForm"
+						method="GET"
+						action="thankyou.html">
+						<fieldset>
+							<legend>Membership Information</legend>
+
+							<div class="form-group">
+								<label for="firstName">
+									First Name
+									<span class="required">*</span>
+								</label>
+								<input
+									type="text"
+									id="firstName"
+									name="firstName"
+									title="Enter your first name"
+									autocomplete="given-name"
+									required />
+							</div>
+
+							<div class="form-group">
+								<label for="lastName">
+									Last Name
+									<span class="required">*</span>
+								</label>
+								<input
+									type="text"
+									id="lastName"
+									name="lastName"
+									title="Enter your last name"
+									autocomplete="family-name"
+									required />
+							</div>
+
+							<div class="form-group">
+								<label for="orgTitle">
+									Organizational Title
+								</label>
+								<input
+									type="text"
+									id="orgTitle"
+									name="orgTitle"
+									title="Organizational title must be at least 7 characters and contain only letters, hyphens, and spaces"
+									autocomplete="organization-title"
+									pattern="^[a-zA-Z\s\-]{7,}$" />
+							</div>
+
+							<div class="form-group">
+								<label for="email">
+									Email Address
+									<span class="required">*</span>
+								</label>
+								<input
+									type="email"
+									id="email"
+									name="email"
+									title="Enter a valid email address"
+									autocomplete="email"
+									placeholder="example@company.com"
+									required />
+							</div>
+
+							<div class="form-group">
+								<label for="phone">
+									Phone Number
+									<span class="required">*</span>
+								</label>
+								<input
+									type="tel"
+									id="phone"
+									name="phone"
+									title="Enter your phone number"
+									autocomplete="tel"
+									required />
+							</div>
+
+							<div class="form-group">
+								<label for="company">
+									Company/Organization Name
+									<span class="required">*</span>
+								</label>
+								<input
+									type="text"
+									id="company"
+									name="company"
+									title="Enter your company or organization name"
+									autocomplete="organization"
+									required />
+							</div>
+
+							<div class="form-group">
+								<label for="membershipLevel">
+									Membership Level
+									<span class="required">*</span>
+								</label>
+								<select
+									id="membershipLevel"
+									name="membershipLevel"
+									title="Select your preferred membership level"
+									required>
+									<option value="">
+										-- Select Membership Level --
+									</option>
+									<option value="np">
+										NP Membership - Non-Profit
+									</option>
+									<option value="bronze">
+										Bronze Membership
+									</option>
+									<option value="silver">
+										Silver Membership
+									</option>
+									<option value="gold">
+										Gold Membership
+									</option>
+								</select>
+							</div>
+
+							<div class="form-group">
+								<label for="description">
+									Business Description
+								</label>
+								<textarea
+									id="description"
+									name="description"
+									title="Describe your business or organization"
+									rows="4"
+									placeholder="Tell us about your business or organization..."></textarea>
+							</div>
+
+							<input
+								type="hidden"
+								id="timestamp"
+								name="timestamp" />
+
+							<button type="submit" class="submit-btn">
+								Submit Application
+							</button>
+						</fieldset>
+					</form>
+				</section>
+
+				<section class="membership-cards-section">
+					<div class="membership-cards">
+						<div class="membership-card" data-level="np">
+							<div class="card-header">
+								<h3>NP Membership</h3>
+								<p class="card-price">Free</p>
+							</div>
+							<p class="card-description">
+								For non-profit organizations
+							</p>
+							<button class="card-link" data-modal="npModal">
+								Learn More
+							</button>
+						</div>
+
+						<div class="membership-card" data-level="bronze">
+							<div class="card-header">
+								<h3>Bronze Membership</h3>
+							</div>
+							<p class="card-description">
+								Perfect for small businesses
+							</p>
+							<button class="card-link" data-modal="bronzeModal">
+								Learn More
+							</button>
+						</div>
+
+						<div class="membership-card" data-level="silver">
+							<div class="card-header">
+								<h3>Silver Membership</h3>
+							</div>
+							<p class="card-description">
+								Great for growing companies
+							</p>
+							<button class="card-link" data-modal="silverModal">
+								Learn More
+							</button>
+						</div>
+
+						<div class="membership-card" data-level="gold">
+							<div class="card-header">
+								<h3>Gold Membership</h3>
+							</div>
+							<p class="card-description">
+								Premium tier with exclusive benefits
+							</p>
+							<button class="card-link" data-modal="goldModal">
+								Learn More
+							</button>
+						</div>
+					</div>
+				</section>
+			</div>
+		</main>
+
+		<div id="npModal" class="modal">
+			<div class="modal-content">
+				<span class="close">&times;</span>
+				<h2>NP Membership Benefits</h2>
+				<ul>
+					<li>Listing in the Chamber directory</li>
+					<li>Access to networking events</li>
+					<li>Monthly newsletter</li>
+					<li>Community support and resources</li>
+					<li>No membership fee</li>
+				</ul>
+				<p class="modal-footer">
+					Perfect for non-profit organizations looking to grow their
+					community presence.
+				</p>
+			</div>
+		</div>
+
+		<div id="bronzeModal" class="modal">
+			<div class="modal-content">
+				<span class="close">&times;</span>
+				<h2>Bronze Membership Benefits</h2>
+				<ul>
+					<li>Everything in NP Membership</li>
+					<li>Featured listing in directory</li>
+					<li>10% discount on event tickets</li>
+					<li>Logo displayed on website</li>
+					<li>Access to business training workshops</li>
+					<li>Monthly business spotlight</li>
+				</ul>
+				<p class="modal-footer">
+					Ideal for small businesses ready to expand their network.
+				</p>
+			</div>
+		</div>
+
+		<div id="silverModal" class="modal">
+			<div class="modal-content">
+				<span class="close">&times;</span>
+				<h2>Silver Membership Benefits</h2>
+				<ul>
+					<li>Everything in Bronze Membership</li>
+					<li>Premium featured listing with color highlighting</li>
+					<li>20% discount on all events</li>
+					<li>Priority support and dedicated contact</li>
+					<li>Promotional space on social media (1x per month)</li>
+					<li>Exclusive networking breakfast events</li>
+					<li>Speaking opportunity at annual conference</li>
+				</ul>
+				<p class="modal-footer">
+					Perfect for established businesses seeking greater
+					visibility.
+				</p>
+			</div>
+		</div>
+
+		<div id="goldModal" class="modal">
+			<div class="modal-content">
+				<span class="close">&times;</span>
+				<h2>Gold Membership Benefits</h2>
+				<ul>
+					<li>Everything in Silver Membership</li>
+					<li>Platinum featured listing at top of directory</li>
+					<li>30% discount on all events</li>
+					<li>Dedicated account manager</li>
+					<li>Monthly promotional posts on all social media</li>
+					<li>Exclusive VIP networking dinners (4x per year)</li>
+					<li>Keynote speaking opportunity at conference</li>
+					<li>
+						Prominent homepage banner advertisement (3 months per
+						year)
+					</li>
+					<li>Custom business profile page on website</li>
+					<li>Priority access to sponsorship opportunities</li>
+				</ul>
+				<p class="modal-footer">
+					Our most prestigious tier offering maximum exposure and
+					exclusive benefits.
+				</p>
+			</div>
+		</div>
+
+		<footer>
+			<div class="footer-info">
+				<p><strong>Ji-Paraná Chamber of Commerce</strong></p>
+				<p>Rua Chile 405</p>
+				<p>Ji-Paraná, Rondônia Brasil</p>
+				<p>info@jiparana.org</p>
+				<p>(68) 9 9999-9999</p>
+			</div>
+
+			<div class="social">
+				<img src="images/youtube.png" alt="YouTube" />
+				<img src="images/x-icon.svg" alt="Twitter" />
+				<img src="images/linkedin.svg" alt="LinkedIn" />
+			</div>
+
+			<div class="dev-info">
+				<p>WDD 231 Class Project</p>
+				<p>Artur Calderon</p>
+				<p>© <span id="year"></span> Ji-Paraná Chamber</p>
+				<p>Last Modification: <span id="lastModified"></span></p>
+			</div>
+		</footer>
+
+		<script src="scripts/script.js"></script>
+		<script src="scripts/join.js"></script>
+	</body>
+</html>

@@ -1,0 +1,332 @@
+.join-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.form-section {
+    background-color: var(--surface);
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    border: 1px solid var(--border);
+}
+
+form fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+form legend {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: var(--primary);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: var(--text-main);
+    font-size: 0.95rem;
+}
+
+.required {
+    color: #EF4444;
+    margin-left: 0.2rem;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 1rem;
+    color: var(--text-main);
+    background-color: var(--bg);
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--secondary);
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+    background-color: var(--surface);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--secondary);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 1rem;
+}
+
+.submit-btn:hover {
+    background-color: var(--primary);
+    box-shadow: 0 4px 12px rgba(30, 58, 138, 0.3);
+}
+
+.submit-btn:active {
+    transform: scale(0.98);
+}
+
+.membership-cards-section {
+    width: 100%;
+}
+
+.membership-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.membership-card {
+    background: linear-gradient(135deg, var(--surface) 0%, #FAFAFA 100%);
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    border: 2px solid var(--border);
+    transition: all 0.3s ease;
+    animation: slideInCard 0.6s ease-out forwards;
+    opacity: 0;
+}
+
+.membership-card:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.membership-card:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.membership-card:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.membership-card:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+@keyframes slideInCard {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.membership-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.1);
+    border-color: var(--secondary);
+}
+
+.membership-card[data-level="bronze"] {
+    border-color: #D97706;
+}
+
+.membership-card[data-level="silver"] {
+    border-color: #9CA3AF;
+}
+
+.membership-card[data-level="gold"] {
+    border-color: #F59E0B;
+}
+
+.membership-card[data-level="np"] {
+    border-color: #10B981;
+}
+
+.card-header {
+    margin-bottom: 1rem;
+}
+
+.card-header h3 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.25rem;
+    color: var(--primary);
+}
+
+.card-price {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--accent);
+}
+
+.card-description {
+    margin: 0 0 1rem 0;
+    color: var(--text-muted);
+    font-size: 0.95rem;
+}
+
+.card-link {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.card-link:hover {
+    background-color: var(--secondary);
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.modal.show {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    background-color: var(--surface);
+    padding: 2rem;
+    border-radius: 12px;
+    max-width: 90%;
+    max-height: 90vh;
+    overflow-y: auto;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    animation: slideUp 0.3s ease;
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.close {
+    color: var(--text-muted);
+    float: right;
+    font-size: 1.75rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.close:hover {
+    color: var(--text-main);
+}
+
+.modal-content h2 {
+    margin-top: 0;
+    color: var(--primary);
+    margin-bottom: 1rem;
+}
+
+.modal-content ul {
+    list-style-position: inside;
+    padding-left: 0;
+    margin: 1rem 0;
+}
+
+.modal-content li {
+    margin-bottom: 0.75rem;
+    line-height: 1.6;
+    color: var(--text-main);
+}
+
+.modal-footer {
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border);
+    font-style: italic;
+    color: var(--text-muted);
+    font-size: 0.95rem;
+}
+
+@media (min-width: 768px) {
+    .join-container {
+        grid-template-columns: 2fr 1fr;
+        gap: 2rem;
+    }
+
+    .membership-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .form-section {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .membership-cards-section {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .modal-content {
+        max-width: 500px;
+        max-height: 80vh;
+    }
+}
+
+@media (min-width: 1024px) {
+    .membership-cards {
+        gap: 1rem;
+    }
+
+    .join-container {
+        gap: 2rem;
+    }
+}
