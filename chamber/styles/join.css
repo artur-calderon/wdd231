@@ -7,11 +7,16 @@
     margin: 0 auto;
 }
 
-.form-section {
+.form-section,
+.membership-card,
+.modal-content {
     background-color: var(--surface);
     border-radius: 12px;
-    padding: 1.5rem;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+.form-section {
+    padding: 1.5rem;
     border: 1px solid var(--border);
 }
 
@@ -73,17 +78,21 @@ form legend {
     min-height: 120px;
 }
 
-.submit-btn {
+.submit-btn,
+.card-link {
     width: 100%;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.submit-btn {
     padding: 1rem;
     background-color: var(--secondary);
     color: white;
-    border: none;
     border-radius: 6px;
     font-weight: 700;
     font-size: 1rem;
-    cursor: pointer;
-    transition: all 0.3s ease;
     margin-top: 1rem;
 }
 
@@ -96,10 +105,6 @@ form legend {
     transform: scale(0.98);
 }
 
-.membership-cards-section {
-    width: 100%;
-}
-
 .membership-cards {
     display: grid;
     grid-template-columns: 1fr;
@@ -107,14 +112,12 @@ form legend {
 }
 
 .membership-card {
-    background: linear-gradient(135deg, var(--surface) 0%, #FAFAFA 100%);
-    border-radius: 12px;
     padding: 1.5rem;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
     border: 2px solid var(--border);
     transition: all 0.3s ease;
     animation: slideInCard 0.6s ease-out forwards;
     opacity: 0;
+    background: linear-gradient(135deg, var(--surface) 0%, #FAFAFA 100%);
 }
 
 .membership-card:nth-child(1) {
@@ -190,15 +193,11 @@ form legend {
 }
 
 .card-link {
-    width: 100%;
     padding: 0.75rem;
     background-color: var(--primary);
     color: white;
-    border: none;
     border-radius: 6px;
     font-weight: 600;
-    cursor: pointer;
-    transition: all 0.3s ease;
 }
 
 .card-link:hover {
@@ -234,9 +233,7 @@ form legend {
 }
 
 .modal-content {
-    background-color: var(--surface);
     padding: 2rem;
-    border-radius: 12px;
     max-width: 90%;
     max-height: 90vh;
     overflow-y: auto;
