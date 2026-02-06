@@ -66,6 +66,12 @@ nav a:hover {
     background-color: var(--bg);
 }
 
+nav a.active {
+    background-color: var(--secondary);
+    color: #fff;
+    font-weight: 600;
+}
+
 /* ================= HERO ================= */
 .hero {
     position: relative;

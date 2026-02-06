@@ -13,6 +13,7 @@
 		<link
 			href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
 			rel="stylesheet" />
+		<link rel="preload" as="image" href="images/hero-image.jpg" />
 
 		<meta property="og:title" content="Ji-Parana Chamber of Commerce" />
 		<meta
@@ -27,7 +28,10 @@
 
 		<link rel="stylesheet" href="styles/normalize.css" />
 		<link rel="stylesheet" href="styles/small.css" />
-		<link rel="stylesheet" href="styles/larger.css" />
+		<link
+			rel="stylesheet"
+			href="styles/larger.css"
+			media="(min-width: 641px)" />
 	</head>
 	<body>
 		<header>
@@ -42,13 +46,19 @@
 				<a href="index.html">Home</a>
 				<a href="directory.html">Directory</a>
 				<a href="join.html">Join</a>
-				<a href="discover.html">Discover</a>
+				<a href="discover.html" class="active">Discover</a>
 			</nav>
 		</header>
 
 		<main>
 			<section class="hero">
-				<img src="images/hero-image.jpg" alt="Hero image" />
+				<img
+					src="images/hero-image.jpg"
+					alt="Hero image"
+					width="1500"
+					height="991"
+					decoding="async"
+					fetchpriority="high" />
 			</section>
 
 			<section class="discover-intro">
@@ -74,9 +84,9 @@
 			</div>
 
 			<div class="social">
-				<img src="images/youtube.png" alt="YouTube" />
-				<img src="images/x-icon.svg" alt="Twitter" />
-				<img src="images/linkedin.svg" alt="LinkedIn" />
+				<img src="images/youtube.png" alt="YouTube" loading="lazy" />
+				<img src="images/x-icon.svg" alt="Twitter" loading="lazy" />
+				<img src="images/linkedin.svg" alt="LinkedIn" loading="lazy" />
 			</div>
 
 			<div class="dev-info">

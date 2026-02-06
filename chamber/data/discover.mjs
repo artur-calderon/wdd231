@@ -4,7 +4,7 @@ export const discoverItems = [
 		address: "Av. Transcontinental, Ji Parana, RO",
 		description:
 			"A central plaza with shaded walkways, weekend vendors, and community events.",
-		image: "images/dom-bosco-square.png",
+		image: "images/dom-bosco-square.webp",
 		alt: "Dom Bosco Square with trees and benches",
 	},
 	{
@@ -12,7 +12,7 @@ export const discoverItems = [
 		address: "Rua das Palmeiras, Ji Parana, RO",
 		description:
 			"A calm riverside area with walking paths, scenic views, and sunset spots.",
-		image: "images/rio-machado-riverfront.jpg",
+		image: "images/rio-machado-riverfront.webp",
 		alt: "Riverfront view of Rio Machado",
 	},
 	{
@@ -20,7 +20,7 @@ export const discoverItems = [
 		address: "Rua 2 de Abril, Ji Parana, RO",
 		description:
 			"Local produce, crafts, and traditional foods in a lively indoor market.",
-		image: "images/municipal-market.jpg",
+		image: "images/municipal-market.webp",
 		alt: "Stalls inside the municipal market",
 	},
 	{
@@ -60,7 +60,7 @@ export const discoverItems = [
 		address: "Av. Brasil, Ji Parana, RO",
 		description:
 			"Home to local tournaments, fairs, and community celebrations.",
-		image: "images/sports-arena.jpeg",
+		image: "images/sports-arena.webp",
 		alt: "Sports arena stands and field",
 	},
 ];
