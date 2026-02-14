@@ -14,12 +14,12 @@ export function openModal(course) {
 		const rating = "⭐".repeat(Math.floor(course.rating));
 
 		modalBody.innerHTML = `
-      <div class="modal-info-item" style="background-color: var(--primary-color); color: var(--white); padding: 1rem; margin: -1.5rem -1rem 1.5rem; border-radius: 0;">
-        <span style="display: block; font-size: 0.9rem; opacity: 0.9; margin-bottom: 0.25rem;">Category</span>
-        <strong style="color: var(--white); font-size: 1.2rem;">${course.category}</strong>
+      <div class="modal-info-item modal-category-header">
+        <span class="modal-category-label">Category</span>
+        <strong class="modal-category-value">${course.category}</strong>
       </div>
       
-      <p style="font-size: 1.05rem; line-height: 1.8; margin-bottom: 1.5rem;">${course.description}</p>
+      <p class="modal-description">${course.description}</p>
       
       <div class="modal-info">
         <div class="modal-info-item">
@@ -43,33 +43,33 @@ export function openModal(course) {
         </div>
       </div>
       
-      <div style="margin-top: 2rem; padding-top: 1.5rem; border-top: 2px solid var(--light-gray);">
-        <h3 style="margin-bottom: 1rem; color: var(--primary-color);">What You'll Learn</h3>
-        <ul style="list-style: none; padding: 0;">
-          <li style="padding: 0.5rem 0; padding-left: 1.5rem; position: relative;">
-            <span style="position: absolute; left: 0;">✓</span>
+      <div class="modal-learning-section">
+        <h3 class="modal-learning-title">What You'll Learn</h3>
+        <ul class="modal-learning-list">
+          <li class="modal-learning-item">
+            <span class="modal-checkmark">✓</span>
             Comprehensive understanding of ${course.category.toLowerCase()} concepts
           </li>
-          <li style="padding: 0.5rem 0; padding-left: 1.5rem; position: relative;">
-            <span style="position: absolute; left: 0;">✓</span>
+          <li class="modal-learning-item">
+            <span class="modal-checkmark">✓</span>
             Hands-on practice with real-world projects and exercises
           </li>
-          <li style="padding: 0.5rem 0; padding-left: 1.5rem; position: relative;">
-            <span style="position: absolute; left: 0;">✓</span>
+          <li class="modal-learning-item">
+            <span class="modal-checkmark">✓</span>
             Expert guidance from ${course.instructor}
           </li>
-          <li style="padding: 0.5rem 0; padding-left: 1.5rem; position: relative;">
-            <span style="position: absolute; left: 0;">✓</span>
+          <li class="modal-learning-item">
+            <span class="modal-checkmark">✓</span>
             Certificate of completion to showcase your achievement
           </li>
         </ul>
       </div>
       
-      <div style="text-align: center; margin-top: 2rem;">
-        <button class="cta-button" style="width: 100%; padding: 1rem; font-size: 1.1rem;">
+      <div class="modal-enroll-section">
+        <button class="cta-button modal-enroll-btn">
           Enroll Now
         </button>
-        <p style="margin-top: 1rem; font-size: 0.9rem; color: var(--dark-gray);">
+        <p class="modal-enroll-text">
           Join thousands of students learning ${course.category.toLowerCase()}
         </p>
       </div>

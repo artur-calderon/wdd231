@@ -26,13 +26,21 @@
 		<link
 			rel="icon"
 			type="image/svg+xml"
-			href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='50' fill='%231e88e5'/><text x='50' y='70' font-size='60' text-anchor='middle' fill='white' font-family='Arial, sans-serif' font-weight='bold'>A</text></svg>" />
+			href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='50' fill='%231e88e5'/%3E%3Ctext x='50' y='70' font-size='60' text-anchor='middle' fill='white' font-family='Arial, sans-serif' font-weight='bold'%3EA%3C/text%3E%3C/svg%3E" />
 
-		<!-- Stylesheet -->
-		<link rel="stylesheet" href="styles/main.css" />
+		<!-- Google Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap"
+			rel="stylesheet" />
+
+		<!-- Stylesheets -->
+		<link rel="stylesheet" href="styles/base.css" />
+		<link rel="stylesheet" href="styles/larger.css" />
 
 		<!-- JavaScript Module -->
-		<script type="module" src="scripts/main.js" defer></script>
+		<script type="module" src="scripts/main.js"></script>
 	</head>
 	<body>
 		<!-- Header -->
@@ -72,58 +80,29 @@
 			<section>
 				<div class="container">
 					<div class="form-result">
-						<div style="text-align: center; margin-bottom: 2rem">
-							<div
-								style="
-									width: 80px;
-									height: 80px;
-									background-color: var(--success);
-									border-radius: 50%;
-									display: flex;
-									align-items: center;
-									justify-content: center;
-									margin: 0 auto 1rem;
-									font-size: 3rem;
-								">
-								✓
-							</div>
-							<h1
-								style="
-									color: var(--success);
-									margin-bottom: 0.5rem;
-								">
+						<div class="center-mb">
+							<div class="success-icon-container">✓</div>
+							<h1 class="success-title">
 								Form Successfully Submitted!
 							</h1>
-							<p
-								style="
-									color: var(--dark-gray);
-									font-size: 1.1rem;
-								">
+							<p class="success-description">
 								Thank you for contacting us. We'll get back to
 								you soon.
 							</p>
 						</div>
 
-						<h2
-							style="
-								margin-top: 2rem;
-								margin-bottom: 1rem;
-								font-size: 1.5rem;
-							">
+						<h2 class="submitted-info-title">
 							Submitted Information:
 						</h2>
 						<div id="submittedData">
 							<!-- Form data will be displayed here -->
 						</div>
 
-						<div style="text-align: center; margin-top: 2rem">
+						<div class="center-mt">
 							<a href="index.html" class="btn-back"
 								>Return to Home</a
 							>
-							<a
-								href="courses.html"
-								class="btn-back"
-								style="margin-left: 1rem"
+							<a href="courses.html" class="btn-back ml-1"
 								>Browse Courses</a
 							>
 						</div>
@@ -246,7 +225,7 @@
 				}
 			} else {
 				submittedDataDiv.innerHTML =
-					'<p style="color: var(--error); text-align: center;">No form data received. Please submit the contact form.</p>';
+					'<p class="error-message">No form data received. Please submit the contact form.</p>';
 			}
 		</script>
 	</body>

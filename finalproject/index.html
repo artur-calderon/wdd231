@@ -28,13 +28,21 @@
 		<link
 			rel="icon"
 			type="image/svg+xml"
-			href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='50' fill='%231e88e5'/><text x='50' y='70' font-size='60' text-anchor='middle' fill='white' font-family='Arial, sans-serif' font-weight='bold'>A</text></svg>" />
+			href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='50' fill='%231e88e5'/%3E%3Ctext x='50' y='70' font-size='60' text-anchor='middle' fill='white' font-family='Arial, sans-serif' font-weight='bold'%3EA%3C/text%3E%3C/svg%3E" />
 
-		<!-- Stylesheet -->
-		<link rel="stylesheet" href="styles/main.css" />
+		<!-- Google Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap"
+			rel="stylesheet" />
+
+		<!-- Stylesheets -->
+		<link rel="stylesheet" href="styles/base.css" />
+		<link rel="stylesheet" href="styles/larger.css" />
 
 		<!-- JavaScript Module -->
-		<script type="module" src="scripts/main.js" defer></script>
+		<script type="module" src="scripts/main.js"></script>
 	</head>
 	<body>
 		<!-- Header -->
@@ -104,7 +112,7 @@
 			</section>
 
 			<!-- Categories Section -->
-			<section style="background-color: var(--secondary-color)">
+			<section class="section-secondary-bg">
 				<div class="container">
 					<h2 class="section-title">Browse by Category</h2>
 					<p class="text-center mb-4">
@@ -123,17 +131,7 @@
 					<h2 class="section-title">Why Choose AprendaWeb?</h2>
 					<div class="courses-grid">
 						<article class="course-card">
-							<div
-								class="course-image"
-								style="
-									background: linear-gradient(
-										135deg,
-										#1e88e5 0%,
-										#42a5f5 100%
-									);
-								">
-								📚
-							</div>
+							<div class="course-image gradient-blue">📚</div>
 							<div class="course-content">
 								<h3 class="course-title">Curated Selection</h3>
 								<p class="course-description">
@@ -145,17 +143,7 @@
 							</div>
 						</article>
 						<article class="course-card">
-							<div
-								class="course-image"
-								style="
-									background: linear-gradient(
-										135deg,
-										#43a047 0%,
-										#66bb6a 100%
-									);
-								">
-								⭐
-							</div>
+							<div class="course-image gradient-green">⭐</div>
 							<div class="course-content">
 								<h3 class="course-title">Detailed Reviews</h3>
 								<p class="course-description">
@@ -166,17 +154,7 @@
 							</div>
 						</article>
 						<article class="course-card">
-							<div
-								class="course-image"
-								style="
-									background: linear-gradient(
-										135deg,
-										#fb8c00 0%,
-										#ffa726 100%
-									);
-								">
-								🎯
-							</div>
+							<div class="course-image gradient-orange">🎯</div>
 							<div class="course-content">
 								<h3 class="course-title">
 									Personalized Recommendations

@@ -9,17 +9,34 @@
 			content="Attributions and credits for resources used in the AprendaWeb project." />
 		<meta name="author" content="Artur Calderon" />
 
+		<!-- Open Graph Meta Tags -->
+		<meta property="og:title" content="AprendaWeb Attributions - Credits and Resources" />
+		<meta
+			property="og:description"
+			content="Complete attributions and credits for all resources, fonts, images, and educational content used in the AprendaWeb online courses platform." />
+		<meta property="og:image" content="https://arthurcalderon.github.io/wdd231/finalproject/images/og-image.jpg" />
+		<meta property="og:url" content="https://arthurcalderon.github.io/wdd231/finalproject/attributions.html" />
+		<meta property="og:type" content="website" />
+
 		<!-- Favicon -->
 		<link
 			rel="icon"
 			type="image/svg+xml"
-			href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='50' fill='%231e88e5'/><text x='50' y='70' font-size='60' text-anchor='middle' fill='white' font-family='Arial, sans-serif' font-weight='bold'>A</text></svg>" />
+			href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='50' fill='%231e88e5'/%3E%3Ctext x='50' y='70' font-size='60' text-anchor='middle' fill='white' font-family='Arial, sans-serif' font-weight='bold'%3EA%3C/text%3E%3C/svg%3E" />
 
-		<!-- Stylesheet -->
-		<link rel="stylesheet" href="styles/main.css" />
+		<!-- Google Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap"
+			rel="stylesheet" />
+
+		<!-- Stylesheets -->
+		<link rel="stylesheet" href="styles/base.css" />
+		<link rel="stylesheet" href="styles/larger.css" />
 
 		<!-- JavaScript Module -->
-		<script type="module" src="scripts/main.js" defer></script>
+		<script type="module" src="scripts/main.js"></script>
 	</head>
 	<body>
 		<!-- Header -->
@@ -56,36 +73,14 @@
 
 		<!-- Main Content -->
 		<main>
-			<section style="padding: 3rem 1rem">
+			<section class="section-compact">
 				<div class="container">
-					<h1
-						style="
-							text-align: center;
-							color: var(--primary-color);
-							margin-bottom: 2rem;
-						">
-						Attributions
-					</h1>
+					<h1 class="attribution-title">Attributions</h1>
 
-					<div
-						style="
-							max-width: 800px;
-							margin: 0 auto;
-							background-color: var(--white);
-							padding: 2rem;
-							border-radius: var(--border-radius);
-							box-shadow: var(--box-shadow);
-						">
-						<section style="margin-bottom: 2rem">
-							<h2
-								style="
-									color: var(--primary-color);
-									margin-bottom: 1rem;
-									font-size: 1.5rem;
-								">
-								Fonts
-							</h2>
-							<ul style="line-height: 1.8">
+					<div class="attribution-container">
+						<section class="section-mb">
+							<h2 class="attribution-section-title">Fonts</h2>
+							<ul class="line-height-lg">
 								<li>
 									<strong>Montserrat</strong> - Used for
 									headings
@@ -94,20 +89,20 @@
 										href="https://fonts.google.com/specimen/Montserrat"
 										target="_blank"
 										rel="noopener"
-										style="color: var(--primary-color)"
+										class="primary-text"
 										>Google Fonts - Montserrat</a
 									>
 									<br />
 									<em>Designer: Julieta Ulanovsky</em>
 								</li>
-								<li style="margin-top: 1rem">
+								<li class="attribution-list-item-spacing">
 									<strong>Roboto</strong> - Used for body text
 									<br />
 									<a
 										href="https://fonts.google.com/specimen/Roboto"
 										target="_blank"
 										rel="noopener"
-										style="color: var(--primary-color)"
+										class="primary-text"
 										>Google Fonts - Roboto</a
 									>
 									<br />
@@ -116,16 +111,11 @@
 							</ul>
 						</section>
 
-						<section style="margin-bottom: 2rem">
-							<h2
-								style="
-									color: var(--primary-color);
-									margin-bottom: 1rem;
-									font-size: 1.5rem;
-								">
+						<section class="section-mb">
+							<h2 class="attribution-section-title">
 								Icons and Emojis
 							</h2>
-							<ul style="line-height: 1.8">
+							<ul class="line-height-lg">
 								<li>
 									Unicode emoji characters used throughout the
 									site for visual indicators
@@ -134,28 +124,23 @@
 										href="https://unicode.org/emoji/"
 										target="_blank"
 										rel="noopener"
-										style="color: var(--primary-color)"
+										class="primary-text"
 										>Unicode Emoji Standard</a
 									>
 								</li>
 							</ul>
 						</section>
 
-						<section style="margin-bottom: 2rem">
-							<h2
-								style="
-									color: var(--primary-color);
-									margin-bottom: 1rem;
-									font-size: 1.5rem;
-								">
+						<section class="section-mb">
+							<h2 class="attribution-section-title">
 								Design Inspiration
 							</h2>
-							<ul style="line-height: 1.8">
+							<ul class="line-height-lg">
 								<li>
 									Color scheme and design principles inspired
 									by modern web development best practices
 								</li>
-								<li style="margin-top: 1rem">
+								<li class="attribution-list-item-spacing">
 									Responsive design patterns and mobile-first
 									approach
 									<br />
@@ -163,46 +148,36 @@
 										href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design"
 										target="_blank"
 										rel="noopener"
-										style="color: var(--primary-color)"
+										class="primary-text"
 										>MDN Web Docs - Responsive Design</a
 									>
 								</li>
 							</ul>
 						</section>
 
-						<section style="margin-bottom: 2rem">
-							<h2
-								style="
-									color: var(--primary-color);
-									margin-bottom: 1rem;
-									font-size: 1.5rem;
-								">
+						<section class="section-mb">
+							<h2 class="attribution-section-title">
 								Course Information
 							</h2>
-							<ul style="line-height: 1.8">
+							<ul class="line-height-lg">
 								<li>
 									Course data, descriptions, and information
 									are fictional and created for educational
 									purposes as part of the WDD 231 final
 									project
 								</li>
-								<li style="margin-top: 1rem">
+									<li class="attribution-list-item-spacing">
 									Instructor names are fictional and any
 									resemblance to real persons is coincidental
 								</li>
 							</ul>
 						</section>
 
-						<section style="margin-bottom: 2rem">
-							<h2
-								style="
-									color: var(--primary-color);
-									margin-bottom: 1rem;
-									font-size: 1.5rem;
-								">
+						<section class="section-mb">
+							<h2 class="attribution-section-title">
 								Technologies Used
 							</h2>
-							<ul style="line-height: 1.8">
+							<ul class="line-height-lg">
 								<li>
 									<strong>HTML5</strong> - Semantic markup and
 									structure
@@ -231,54 +206,35 @@
 							</ul>
 						</section>
 
-						<section style="margin-bottom: 2rem">
-							<h2
-								style="
-									color: var(--primary-color);
-									margin-bottom: 1rem;
-									font-size: 1.5rem;
-								">
+						<section class="section-mb">
+							<h2 class="attribution-section-title">
 								Learning Resources
 							</h2>
-							<ul style="line-height: 1.8">
+							<ul class="line-height-lg">
 								<li>
 									<a
 										href="https://developer.mozilla.org/"
 										target="_blank"
 										rel="noopener"
-										style="color: var(--primary-color)"
+											class="primary-text"
 										>MDN Web Docs</a
 									>
 									- Web development documentation and
 									tutorials
 								</li>
-								<li style="margin-top: 1rem">
-									<a
-										href="https://www.w3.org/"
-										target="_blank"
-										rel="noopener"
-										style="color: var(--primary-color)"
+									<li class="attribution-list-item-spacing">
+										<a
+											href="https://www.w3.org/"
+											target="_blank"
+											rel="noopener"
+											class="primary-text"
 										>W3C</a
 									>
 									- Web standards and specifications
 								</li>
-								<li style="margin-top: 1rem">
-									BYU-Idaho WDD 231 Course Materials - Web
-									Frontend Development II
-								</li>
-							</ul>
-						</section>
-
-						<section>
-							<h2
-								style="
-									color: var(--primary-color);
-									margin-bottom: 1rem;
-									font-size: 1.5rem;
-								">
-								Project Information
+			<li class="attribution-list-item-spacing">
 							</h2>
-							<p style="line-height: 1.8">
+							<p class="line-height-lg">
 								<strong>Project:</strong> AprendaWeb - Online
 								Courses Guide
 								<br />
@@ -298,18 +254,8 @@
 							</p>
 						</section>
 
-						<div
-							style="
-								margin-top: 2rem;
-								padding-top: 2rem;
-								border-top: 1px solid var(--light-gray);
-								text-align: center;
-							">
-							<p
-								style="
-									color: var(--dark-gray);
-									font-size: 0.9rem;
-								">
+						<div class="attribution-footer">
+							<p class="attribution-footer-text">
 								All content created for educational purposes. No
 								copyright infringement intended.
 								<br />
