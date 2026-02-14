@@ -6,7 +6,7 @@
 		<title>Browse Courses - AprendaWeb</title>
 		<meta
 			name="description"
-			content="Browse and filter through hundreds of online courses in web development, design, programming, data science, marketing, and more. Find the perfect course for your learning goals." />
+			content="Browse and filter hundreds of online courses in web development, design, programming, data science, marketing, and more." />
 		<meta name="author" content="Artur Calderon" />
 
 		<!-- Open Graph Meta Tags -->
@@ -142,20 +142,14 @@
 					<div
 						id="noResults"
 						class="hidden text-center section-compact">
-						<h3 class="gray-text mb-2">No courses found</h3>
-						<p class="gray-text">
-							Try adjusting your filters or search terms to find
-							what you're looking for.
-						</p>
-						<button
-							class="cta-button mt-1-5"
-							onclick="
-								document.getElementById('resetFilters').click()
-							">
-							Clear Filters
-						</button>
-					</div>
-				</div>
+					<h2 class="gray-text mb-2">No courses found</h2>
+					<p class="gray-text">
+						Try adjusting your filters or search terms to find
+						what you're looking for.
+					</p>
+					<button
+						id="clearFiltersBtn"
+						class="cta-button mt-1-5">
 			</section>
 		</main>
 

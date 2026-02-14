@@ -21,27 +21,25 @@ async function fetchCourses() {
 function createCourseCard(course) {
 	const firstLetter = course.title.charAt(0).toUpperCase();
 
-	const gradients = {
-		"Web Development": "linear-gradient(135deg, #1e88e5 0%, #64b5f6 100%)",
-		Programming: "linear-gradient(135deg, #43a047 0%, #66bb6a 100%)",
-		Design: "linear-gradient(135deg, #e91e63 0%, #f06292 100%)",
-		"Data Science": "linear-gradient(135deg, #8e24aa 0%, #ab47bc 100%)",
-		Marketing: "linear-gradient(135deg, #fb8c00 0%, #ffa726 100%)",
-		Business: "linear-gradient(135deg, #00acc1 0%, #26c6da 100%)",
-		"IT & Security": "linear-gradient(135deg, #5e35b1 0%, #7e57c2 100%)",
-		"Mobile Development":
-			"linear-gradient(135deg, #3949ab 0%, #5c6bc0 100%)",
+	const categoryClassMap = {
+		"Web Development": "category-web-development",
+		Programming: "category-programming",
+		Design: "category-design",
+		"Data Science": "category-data-science",
+		Marketing: "category-marketing",
+		Business: "category-business",
+		"IT & Security": "category-it-security",
+		"Mobile Development": "category-mobile-development",
 	};
 
-	const gradient =
-		gradients[course.category] ||
-		"linear-gradient(135deg, #1e88e5 0%, #64b5f6 100%)";
+	const categoryClass =
+		categoryClassMap[course.category] || "category-web-development";
 
 	const rating = "⭐".repeat(Math.floor(course.rating));
 
 	return `
     <article class="course-card" data-course-id="${course.id}">
-      <div class="course-image" style="background: ${gradient};">
+      <div class="course-image ${categoryClass}">
         ${firstLetter}
       </div>
       <div class="course-content">
@@ -181,6 +179,11 @@ function setupFilters() {
 
 	if (resetButton) {
 		resetButton.addEventListener("click", resetFilters);
+	}
+
+	const clearFiltersBtn = document.getElementById("clearFiltersBtn");
+	if (clearFiltersBtn) {
+		clearFiltersBtn.addEventListener("click", resetFilters);
 	}
 }
 

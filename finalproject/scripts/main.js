@@ -97,4 +97,9 @@ export function loadFromLocalStorage(key) {
 	}
 }
 
+const timestampField = document.getElementById("timestamp");
+if (timestampField) {
+	timestampField.value = new Date().toISOString();
+}
+
 export { openNav, closeNav };
