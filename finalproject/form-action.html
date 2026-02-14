@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Form Submitted - AprendaWeb</title>
+		<meta
+			name="description"
+			content="Your form has been successfully submitted. Thank you for contacting AprendaWeb." />
+		<meta name="author" content="Artur Calderon" />
+
+		<!-- Open Graph Meta Tags -->
+		<meta property="og:title" content="Form Submitted - AprendaWeb" />
+		<meta
+			property="og:description"
+			content="Your form has been successfully submitted." />
+		<meta property="og:type" content="website" />
+		<meta
+			property="og:url"
+			content="https://arthurcalderon.github.io/wdd231/finalproject/form-action.html" />
+		<meta
+			property="og:image"
+			content="https://arthurcalderon.github.io/wdd231/finalproject/images/og-image.jpg" />
+
+		<!-- Favicon -->
+		<link
+			rel="icon"
+			type="image/svg+xml"
+			href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='50' fill='%231e88e5'/><text x='50' y='70' font-size='60' text-anchor='middle' fill='white' font-family='Arial, sans-serif' font-weight='bold'>A</text></svg>" />
+
+		<!-- Stylesheet -->
+		<link rel="stylesheet" href="styles/main.css" />
+
+		<!-- JavaScript Module -->
+		<script type="module" src="scripts/main.js" defer></script>
+	</head>
+	<body>
+		<!-- Header -->
+		<header>
+			<div class="header-container">
+				<a href="index.html" class="logo">
+					<div class="logo-icon">A</div>
+					<span>AprendaWeb</span>
+				</a>
+				<button
+					class="nav-toggle"
+					id="navToggle"
+					aria-label="Open navigation menu">
+					☰
+				</button>
+				<nav id="mainNav">
+					<button
+						class="nav-close"
+						id="navClose"
+						aria-label="Close navigation menu">
+						×
+					</button>
+					<ul class="nav-menu">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="courses.html">Courses</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<!-- Navigation Overlay -->
+		<div class="nav-overlay" id="navOverlay"></div>
+
+		<!-- Main Content -->
+		<main>
+			<section>
+				<div class="container">
+					<div class="form-result">
+						<div style="text-align: center; margin-bottom: 2rem">
+							<div
+								style="
+									width: 80px;
+									height: 80px;
+									background-color: var(--success);
+									border-radius: 50%;
+									display: flex;
+									align-items: center;
+									justify-content: center;
+									margin: 0 auto 1rem;
+									font-size: 3rem;
+								">
+								✓
+							</div>
+							<h1
+								style="
+									color: var(--success);
+									margin-bottom: 0.5rem;
+								">
+								Form Successfully Submitted!
+							</h1>
+							<p
+								style="
+									color: var(--dark-gray);
+									font-size: 1.1rem;
+								">
+								Thank you for contacting us. We'll get back to
+								you soon.
+							</p>
+						</div>
+
+						<h2
+							style="
+								margin-top: 2rem;
+								margin-bottom: 1rem;
+								font-size: 1.5rem;
+							">
+							Submitted Information:
+						</h2>
+						<div id="submittedData">
+							<!-- Form data will be displayed here -->
+						</div>
+
+						<div style="text-align: center; margin-top: 2rem">
+							<a href="index.html" class="btn-back"
+								>Return to Home</a
+							>
+							<a
+								href="courses.html"
+								class="btn-back"
+								style="margin-left: 1rem"
+								>Browse Courses</a
+							>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<!-- Footer -->
+		<footer>
+			<div class="footer-container">
+				<div class="footer-content">
+					<div class="footer-section">
+						<h3>AprendaWeb</h3>
+						<p>
+							Your guide to discovering the best online courses.
+							Learn new skills, advance your career, and achieve
+							your goals.
+						</p>
+					</div>
+					<div class="footer-section">
+						<h3>Quick Links</h3>
+						<ul class="footer-nav">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="courses.html">Courses</a></li>
+							<li><a href="contact.html">Contact</a></li>
+							<li>
+								<a href="attributions.html">Attributions</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer-section">
+						<h3>Categories</h3>
+						<ul class="footer-nav">
+							<li>
+								<a
+									href="courses.html?category=Web%20Development"
+									>Web Development</a
+								>
+							</li>
+							<li>
+								<a href="courses.html?category=Design"
+									>Design</a
+								>
+							</li>
+							<li>
+								<a href="courses.html?category=Programming"
+									>Programming</a
+								>
+							</li>
+							<li>
+								<a href="courses.html?category=Data%20Science"
+									>Data Science</a
+								>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer-bottom">
+					<p>
+						&copy; 2026 AprendaWeb. All rights reserved. | WDD 231
+						Final Project by Artur Calderon
+					</p>
+				</div>
+			</div>
+		</footer>
+
+		<script>
+			// Get URL parameters and display the submitted data
+			const urlParams = new URLSearchParams(window.location.search);
+			const submittedDataDiv = document.getElementById("submittedData");
+
+			// Field labels mapping
+			const fieldLabels = {
+				firstName: "First Name",
+				lastName: "Last Name",
+				email: "Email Address",
+				phone: "Phone Number",
+				subject: "Subject",
+				interestedCategory: "Interested Category",
+				message: "Message",
+				newsletter: "Newsletter Subscription",
+				terms: "Terms Accepted",
+				timestamp: "Submitted At",
+			};
+
+			// Display each parameter
+			if (urlParams.toString()) {
+				for (const [key, value] of urlParams) {
+					if (value) {
+						const resultItem = document.createElement("div");
+						resultItem.className = "result-item";
+
+						const label = fieldLabels[key] || key;
+						let displayValue = value;
+
+						// Format special values
+						if (key === "timestamp") {
+							const date = new Date(value);
+							displayValue = date.toLocaleString("en-US", {
+								year: "numeric",
+								month: "long",
+								day: "numeric",
+								hour: "2-digit",
+								minute: "2-digit",
+							});
+						} else if (key === "newsletter" || key === "terms") {
+							displayValue =
+								value === "yes" || value === "accepted"
+									? "Yes"
+									: "No";
+						} else if (key === "message") {
+							displayValue = value;
+							resultItem.style.whiteSpace = "pre-wrap";
+						}
+
+						resultItem.innerHTML = `<strong>${label}:</strong> ${displayValue}`;
+						submittedDataDiv.appendChild(resultItem);
+					}
+				}
+			} else {
+				submittedDataDiv.innerHTML =
+					'<p style="color: var(--error); text-align: center;">No form data received. Please submit the contact form.</p>';
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,202 @@
+{
+  "courses": [
+    {
+      "id": 1,
+      "title": "Web Development Fundamentals",
+      "category": "Web Development",
+      "level": "Beginner",
+      "duration": "8 weeks",
+      "instructor": "Sarah Johnson",
+      "rating": 4.8,
+      "description": "Learn the basics of HTML, CSS, and JavaScript. Build your first responsive websites from scratch and understand core web development concepts.",
+      "image": "web-fundamentals.jpg"
+    },
+    {
+      "id": 2,
+      "title": "JavaScript ES6+ Modern Techniques",
+      "category": "Programming",
+      "level": "Intermediate",
+      "duration": "6 weeks",
+      "instructor": "Michael Chen",
+      "rating": 4.9,
+      "description": "Master modern JavaScript including arrow functions, promises, async/await, modules, and destructuring. Perfect for developers wanting to update their skills.",
+      "image": "javascript-es6.jpg"
+    },
+    {
+      "id": 3,
+      "title": "UI/UX Design Principles",
+      "category": "Design",
+      "level": "Beginner",
+      "duration": "5 weeks",
+      "instructor": "Emma Rodriguez",
+      "rating": 4.7,
+      "description": "Understand user interface and user experience design fundamentals. Learn color theory, typography, layout principles, and user research methods.",
+      "image": "ui-ux-design.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Python for Data Science",
+      "category": "Data Science",
+      "level": "Beginner",
+      "duration": "10 weeks",
+      "instructor": "Dr. James Williams",
+      "rating": 4.8,
+      "description": "Introduction to Python programming for data analysis. Learn pandas, NumPy, matplotlib, and basic statistical analysis techniques.",
+      "image": "python-data-science.jpg"
+    },
+    {
+      "id": 5,
+      "title": "Digital Marketing Strategy",
+      "category": "Marketing",
+      "level": "Beginner",
+      "duration": "4 weeks",
+      "instructor": "Lisa Anderson",
+      "rating": 4.6,
+      "description": "Build comprehensive digital marketing strategies. Covers SEO, social media marketing, content marketing, and analytics.",
+      "image": "digital-marketing.jpg"
+    },
+    {
+      "id": 6,
+      "title": "Mobile App Development with React Native",
+      "category": "Mobile Development",
+      "level": "Intermediate",
+      "duration": "12 weeks",
+      "instructor": "Kevin Park",
+      "rating": 4.7,
+      "description": "Build cross-platform mobile applications using React Native. Learn navigation, state management, and native module integration.",
+      "image": "react-native.jpg"
+    },
+    {
+      "id": 7,
+      "title": "Machine Learning Fundamentals",
+      "category": "Data Science",
+      "level": "Intermediate",
+      "duration": "10 weeks",
+      "instructor": "Dr. Sophia Martinez",
+      "rating": 4.9,
+      "description": "Introduction to machine learning algorithms and techniques. Covers supervised and unsupervised learning, neural networks, and practical applications.",
+      "image": "machine-learning.jpg"
+    },
+    {
+      "id": 8,
+      "title": "Graphic Design Essentials",
+      "category": "Design",
+      "level": "Beginner",
+      "duration": "6 weeks",
+      "instructor": "Carlos Rivera",
+      "rating": 4.5,
+      "description": "Learn fundamental graphic design skills including composition, color, typography, and visual hierarchy. Practice with real-world projects.",
+      "image": "graphic-design.jpg"
+    },
+    {
+      "id": 9,
+      "title": "Advanced CSS and Animations",
+      "category": "Web Development",
+      "level": "Advanced",
+      "duration": "5 weeks",
+      "instructor": "Rachel Kim",
+      "rating": 4.8,
+      "description": "Master advanced CSS techniques including Flexbox, Grid, animations, transitions, and modern layout methods for stunning web interfaces.",
+      "image": "advanced-css.jpg"
+    },
+    {
+      "id": 10,
+      "title": "Content Writing for the Web",
+      "category": "Marketing",
+      "level": "Beginner",
+      "duration": "4 weeks",
+      "instructor": "Thomas Brown",
+      "rating": 4.6,
+      "description": "Write compelling web content that engages readers and ranks well in search engines. Learn SEO writing, storytelling, and content strategy.",
+      "image": "content-writing.jpg"
+    },
+    {
+      "id": 11,
+      "title": "Database Design and SQL",
+      "category": "Programming",
+      "level": "Intermediate",
+      "duration": "7 weeks",
+      "instructor": "Patricia Lee",
+      "rating": 4.7,
+      "description": "Learn database design principles and SQL programming. Covers normalization, queries, joins, indexes, and database optimization.",
+      "image": "database-sql.jpg"
+    },
+    {
+      "id": 12,
+      "title": "Cybersecurity Basics",
+      "category": "IT & Security",
+      "level": "Beginner",
+      "duration": "6 weeks",
+      "instructor": "David Thompson",
+      "rating": 4.8,
+      "description": "Introduction to cybersecurity concepts including network security, encryption, threat detection, and security best practices.",
+      "image": "cybersecurity.jpg"
+    },
+    {
+      "id": 13,
+      "title": "Photography Fundamentals",
+      "category": "Design",
+      "level": "Beginner",
+      "duration": "5 weeks",
+      "instructor": "Jennifer White",
+      "rating": 4.7,
+      "description": "Master photography basics including exposure, composition, lighting, and camera settings. Learn to capture stunning images.",
+      "image": "photography.jpg"
+    },
+    {
+      "id": 14,
+      "title": "Node.js Backend Development",
+      "category": "Web Development",
+      "level": "Intermediate",
+      "duration": "9 weeks",
+      "instructor": "Andrew Garcia",
+      "rating": 4.8,
+      "description": "Build scalable backend applications with Node.js and Express. Learn RESTful APIs, authentication, database integration, and deployment.",
+      "image": "nodejs-backend.jpg"
+    },
+    {
+      "id": 15,
+      "title": "Cloud Computing with AWS",
+      "category": "IT & Security",
+      "level": "Intermediate",
+      "duration": "8 weeks",
+      "instructor": "Michelle Davis",
+      "rating": 4.9,
+      "description": "Learn Amazon Web Services fundamentals including EC2, S3, Lambda, and RDS. Deploy and manage cloud infrastructure effectively.",
+      "image": "aws-cloud.jpg"
+    },
+    {
+      "id": 16,
+      "title": "Social Media Management",
+      "category": "Marketing",
+      "level": "Beginner",
+      "duration": "4 weeks",
+      "instructor": "Nicole Taylor",
+      "rating": 4.5,
+      "description": "Learn to manage social media platforms effectively. Covers content creation, scheduling, analytics, and community engagement strategies.",
+      "image": "social-media.jpg"
+    },
+    {
+      "id": 17,
+      "title": "Git and Version Control",
+      "category": "Programming",
+      "level": "Beginner",
+      "duration": "3 weeks",
+      "instructor": "Robert Wilson",
+      "rating": 4.8,
+      "description": "Master Git version control system. Learn branching, merging, collaboration workflows, and best practices for team development.",
+      "image": "git-version-control.jpg"
+    },
+    {
+      "id": 18,
+      "title": "E-commerce Business Fundamentals",
+      "category": "Business",
+      "level": "Beginner",
+      "duration": "6 weeks",
+      "instructor": "Amanda Harris",
+      "rating": 4.6,
+      "description": "Start and grow your online business. Learn product selection, marketing strategies, logistics, and customer service for e-commerce success.",
+      "image": "ecommerce-business.jpg"
+    }
+  ]
+}

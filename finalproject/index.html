@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>AprendaWeb - Discover the Best Online Courses</title>
+		<meta
+			name="description"
+			content="AprendaWeb helps you discover and explore the best online courses. Find courses in web development, design, programming, data science, and more." />
+		<meta name="author" content="Artur Calderon" />
+
+		<!-- Open Graph Meta Tags -->
+		<meta
+			property="og:title"
+			content="AprendaWeb - Discover the Best Online Courses" />
+		<meta
+			property="og:description"
+			content="Find and explore online courses in web development, design, programming, data science, marketing, and more." />
+		<meta property="og:type" content="website" />
+		<meta
+			property="og:url"
+			content="https://arthurcalderon.github.io/wdd231/finalproject/" />
+		<meta
+			property="og:image"
+			content="https://arthurcalderon.github.io/wdd231/finalproject/images/og-image.jpg" />
+
+		<!-- Favicon -->
+		<link
+			rel="icon"
+			type="image/svg+xml"
+			href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='50' fill='%231e88e5'/><text x='50' y='70' font-size='60' text-anchor='middle' fill='white' font-family='Arial, sans-serif' font-weight='bold'>A</text></svg>" />
+
+		<!-- Stylesheet -->
+		<link rel="stylesheet" href="styles/main.css" />
+
+		<!-- JavaScript Module -->
+		<script type="module" src="scripts/main.js" defer></script>
+	</head>
+	<body>
+		<!-- Header -->
+		<header>
+			<div class="header-container">
+				<a href="index.html" class="logo">
+					<div class="logo-icon">A</div>
+					<span>AprendaWeb</span>
+				</a>
+				<button
+					class="nav-toggle"
+					id="navToggle"
+					aria-label="Open navigation menu">
+					☰
+				</button>
+				<nav id="mainNav">
+					<button
+						class="nav-close"
+						id="navClose"
+						aria-label="Close navigation menu">
+						×
+					</button>
+					<ul class="nav-menu">
+						<li><a href="index.html" class="active">Home</a></li>
+						<li><a href="courses.html">Courses</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<!-- Navigation Overlay -->
+		<div class="nav-overlay" id="navOverlay"></div>
+
+		<!-- Main Content -->
+		<main>
+			<!-- Hero Section -->
+			<section class="hero">
+				<div class="container">
+					<h1>Discover Your Next Learning Adventure</h1>
+					<p>
+						Explore thousands of online courses from top instructors
+						in web development, design, programming, and more. Start
+						learning today and advance your career.
+					</p>
+					<a href="courses.html" class="cta-button">Browse Courses</a>
+				</div>
+			</section>
+
+			<!-- Featured Courses Section -->
+			<section>
+				<div class="container">
+					<h2 class="section-title">Featured Courses</h2>
+					<p class="text-center mb-4">
+						Check out some of our most popular courses to get
+						started on your learning journey.
+					</p>
+					<div class="courses-grid" id="featuredCourses">
+						<!-- Featured courses will be dynamically loaded here -->
+					</div>
+					<div class="text-center mt-4">
+						<a href="courses.html" class="cta-button"
+							>View All Courses</a
+						>
+					</div>
+				</div>
+			</section>
+
+			<!-- Categories Section -->
+			<section style="background-color: var(--secondary-color)">
+				<div class="container">
+					<h2 class="section-title">Browse by Category</h2>
+					<p class="text-center mb-4">
+						Find courses in your area of interest and start
+						mastering new skills today.
+					</p>
+					<div class="courses-grid" id="categoryList">
+						<!-- Categories will be dynamically loaded here -->
+					</div>
+				</div>
+			</section>
+
+			<!-- Why Choose Us Section -->
+			<section>
+				<div class="container">
+					<h2 class="section-title">Why Choose AprendaWeb?</h2>
+					<div class="courses-grid">
+						<article class="course-card">
+							<div
+								class="course-image"
+								style="
+									background: linear-gradient(
+										135deg,
+										#1e88e5 0%,
+										#42a5f5 100%
+									);
+								">
+								📚
+							</div>
+							<div class="course-content">
+								<h3 class="course-title">Curated Selection</h3>
+								<p class="course-description">
+									We handpick quality courses from trusted
+									instructors and platforms, saving you time
+									in your search for the perfect learning
+									resource.
+								</p>
+							</div>
+						</article>
+						<article class="course-card">
+							<div
+								class="course-image"
+								style="
+									background: linear-gradient(
+										135deg,
+										#43a047 0%,
+										#66bb6a 100%
+									);
+								">
+								⭐
+							</div>
+							<div class="course-content">
+								<h3 class="course-title">Detailed Reviews</h3>
+								<p class="course-description">
+									Read honest reviews and ratings from real
+									students to make informed decisions about
+									which courses are right for you.
+								</p>
+							</div>
+						</article>
+						<article class="course-card">
+							<div
+								class="course-image"
+								style="
+									background: linear-gradient(
+										135deg,
+										#fb8c00 0%,
+										#ffa726 100%
+									);
+								">
+								🎯
+							</div>
+							<div class="course-content">
+								<h3 class="course-title">
+									Personalized Recommendations
+								</h3>
+								<p class="course-description">
+									Get course suggestions based on your
+									interests and learning goals. Our smart
+									filtering helps you discover exactly what
+									you need.
+								</p>
+							</div>
+						</article>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<!-- Footer -->
+		<footer>
+			<div class="footer-container">
+				<div class="footer-content">
+					<div class="footer-section">
+						<h3>AprendaWeb</h3>
+						<p>
+							Your guide to discovering the best online courses.
+							Learn new skills, advance your career, and achieve
+							your goals.
+						</p>
+					</div>
+					<div class="footer-section">
+						<h3>Quick Links</h3>
+						<ul class="footer-nav">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="courses.html">Courses</a></li>
+							<li><a href="contact.html">Contact</a></li>
+							<li>
+								<a href="attributions.html">Attributions</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer-section">
+						<h3>Categories</h3>
+						<ul class="footer-nav">
+							<li>
+								<a
+									href="courses.html?category=Web%20Development"
+									>Web Development</a
+								>
+							</li>
+							<li>
+								<a href="courses.html?category=Design"
+									>Design</a
+								>
+							</li>
+							<li>
+								<a href="courses.html?category=Programming"
+									>Programming</a
+								>
+							</li>
+							<li>
+								<a href="courses.html?category=Data%20Science"
+									>Data Science</a
+								>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer-bottom">
+					<p>
+						&copy; 2026 AprendaWeb. All rights reserved. | WDD 231
+						Final Project by Artur Calderon
+					</p>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>

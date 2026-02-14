@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Browse Courses - AprendaWeb</title>
+		<meta
+			name="description"
+			content="Browse and filter through hundreds of online courses in web development, design, programming, data science, marketing, and more. Find the perfect course for your learning goals." />
+		<meta name="author" content="Artur Calderon" />
+
+		<!-- Open Graph Meta Tags -->
+		<meta property="og:title" content="Browse Courses - AprendaWeb" />
+		<meta
+			property="og:description"
+			content="Browse and filter through hundreds of online courses. Find courses in web development, design, programming, data science, and more." />
+		<meta property="og:type" content="website" />
+		<meta
+			property="og:url"
+			content="https://arthurcalderon.github.io/wdd231/finalproject/courses.html" />
+		<meta
+			property="og:image"
+			content="https://arthurcalderon.github.io/wdd231/finalproject/images/og-image.jpg" />
+
+		<!-- Favicon -->
+		<link
+			rel="icon"
+			type="image/svg+xml"
+			href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='50' fill='%231e88e5'/><text x='50' y='70' font-size='60' text-anchor='middle' fill='white' font-family='Arial, sans-serif' font-weight='bold'>A</text></svg>" />
+
+		<!-- Stylesheet -->
+		<link rel="stylesheet" href="styles/main.css" />
+
+		<!-- JavaScript Modules -->
+		<script type="module" src="scripts/main.js" defer></script>
+		<script type="module" src="scripts/courses.js" defer></script>
+		<script type="module" src="scripts/modal.js" defer></script>
+	</head>
+	<body>
+		<!-- Header -->
+		<header>
+			<div class="header-container">
+				<a href="index.html" class="logo">
+					<div class="logo-icon">A</div>
+					<span>AprendaWeb</span>
+				</a>
+				<button
+					class="nav-toggle"
+					id="navToggle"
+					aria-label="Open navigation menu">
+					☰
+				</button>
+				<nav id="mainNav">
+					<button
+						class="nav-close"
+						id="navClose"
+						aria-label="Close navigation menu">
+						×
+					</button>
+					<ul class="nav-menu">
+						<li><a href="index.html">Home</a></li>
+						<li>
+							<a href="courses.html" class="active">Courses</a>
+						</li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<!-- Navigation Overlay -->
+		<div class="nav-overlay" id="navOverlay"></div>
+
+		<!-- Main Content -->
+		<main>
+			<!-- Page Header -->
+			<section class="hero" style="padding: 3rem 1rem">
+				<div class="container">
+					<h1>Explore Online Courses</h1>
+					<p>
+						Browse through our curated collection of courses and
+						find the perfect one for your learning journey.
+					</p>
+				</div>
+			</section>
+
+			<!-- Courses Section -->
+			<section>
+				<div class="container">
+					<!-- Filter Controls -->
+					<div class="filter-controls">
+						<div class="filter-group">
+							<label for="categoryFilter">Category:</label>
+							<select id="categoryFilter">
+								<option value="all">All Categories</option>
+							</select>
+						</div>
+						<div class="filter-group">
+							<label for="levelFilter">Level:</label>
+							<select id="levelFilter">
+								<option value="all">All Levels</option>
+								<option value="Beginner">Beginner</option>
+								<option value="Intermediate">
+									Intermediate
+								</option>
+								<option value="Advanced">Advanced</option>
+							</select>
+						</div>
+						<div class="filter-group">
+							<label for="searchInput">Search:</label>
+							<input
+								type="text"
+								id="searchInput"
+								placeholder="Search courses..." />
+						</div>
+						<button class="btn-reset" id="resetFilters">
+							Reset Filters
+						</button>
+					</div>
+
+					<!-- Course Count -->
+					<p
+						id="courseCount"
+						class="text-center mb-3"
+						style="color: var(--dark-gray); font-weight: 500">
+						Loading courses...
+					</p>
+
+					<!-- Courses Grid -->
+					<div class="courses-grid" id="coursesGrid">
+						<!-- Courses will be dynamically loaded here -->
+					</div>
+
+					<!-- No Results Message -->
+					<div
+						id="noResults"
+						class="hidden text-center"
+						style="padding: 3rem 1rem">
+						<h3
+							style="
+								color: var(--dark-gray);
+								margin-bottom: 1rem;
+							">
+							No courses found
+						</h3>
+						<p style="color: var(--dark-gray)">
+							Try adjusting your filters or search terms to find
+							what you're looking for.
+						</p>
+						<button
+							class="cta-button"
+							style="margin-top: 1.5rem"
+							onclick="
+								document.getElementById('resetFilters').click()
+							">
+							Clear Filters
+						</button>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<!-- Course Details Modal -->
+		<div
+			class="modal"
+			id="courseModal"
+			role="dialog"
+			aria-modal="true"
+			aria-labelledby="modalTitle">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h2 id="modalTitle">Course Details</h2>
+					<button
+						class="modal-close"
+						id="modalClose"
+						aria-label="Close modal">
+						×
+					</button>
+				</div>
+				<div class="modal-body" id="modalBody">
+					<!-- Course details will be loaded here -->
+				</div>
+			</div>
+		</div>
+
+		<!-- Footer -->
+		<footer>
+			<div class="footer-container">
+				<div class="footer-content">
+					<div class="footer-section">
+						<h3>AprendaWeb</h3>
+						<p>
+							Your guide to discovering the best online courses.
+							Learn new skills, advance your career, and achieve
+							your goals.
+						</p>
+					</div>
+					<div class="footer-section">
+						<h3>Quick Links</h3>
+						<ul class="footer-nav">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="courses.html">Courses</a></li>
+							<li><a href="contact.html">Contact</a></li>
+							<li>
+								<a href="attributions.html">Attributions</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer-section">
+						<h3>Categories</h3>
+						<ul class="footer-nav">
+							<li>
+								<a
+									href="courses.html?category=Web%20Development"
+									>Web Development</a
+								>
+							</li>
+							<li>
+								<a href="courses.html?category=Design"
+									>Design</a
+								>
+							</li>
+							<li>
+								<a href="courses.html?category=Programming"
+									>Programming</a
+								>
+							</li>
+							<li>
+								<a href="courses.html?category=Data%20Science"
+									>Data Science</a
+								>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer-bottom">
+					<p>
+						&copy; 2026 AprendaWeb. All rights reserved. | WDD 231
+						Final Project by Artur Calderon
+					</p>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>
