@@ -264,6 +264,7 @@ main {
    Hero Section
    =================================== */
 .hero {
+  background-color: var(--primary-color);
   background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
   color: var(--white);
   padding: var(--spacing-xl) var(--spacing-md);
@@ -538,6 +539,7 @@ section {
   width: 100%;
   height: 100%;
   background-color: var(--overlay-darker);
+  color: var(--white);
   z-index: 2000;
   align-items: center;
   justify-content: center;
@@ -551,6 +553,7 @@ section {
 
 .modal-content {
   background-color: var(--white);
+  color: var(--text-color);
   border-radius: var(--border-radius);
   max-width: 600px;
   width: 100%;
